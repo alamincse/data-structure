@@ -27,7 +27,7 @@ class ArrayInsertion
 	public function display()
 	{
 		if ($this->top == -1) {
-			return 'Oop, array is empty!';
+			return 'Oops, array is empty!';
 		} else {
 			return $this->array;
 		}
