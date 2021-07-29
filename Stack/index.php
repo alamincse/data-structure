@@ -2,14 +2,9 @@
 
 class Stack
 {
-	/** Store stack element */
-	private $stack = [];
-
-	/** Size of stack */
-	private $size; 
-
-	/** -1 means stack is empty */
-	private $top = -1;
+	private $stack = []; // Store stack element
+	private $size; // Size of stack
+	private $top = -1; //-1 means stack is empty
 
 	public function __construct($size)
 	{
@@ -78,8 +73,7 @@ print_r($stack->display());
 
 echo 'Stack peek ' . $stack->peek() .'<br/>';
 
-
-echo 'Stack pop ' . $stack->pop() .'<br/>';
+echo 'Pop ' . $stack->pop() .'<br/>';
 echo 'After pop: <pre>';
 print_r($stack->display());
 
